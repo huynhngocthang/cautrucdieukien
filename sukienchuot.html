@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>chào mừng đến với trò chơi là trời cho</h1>
+    
+    <img id="messi" src="https://cf.shopee.vn/file/336295657902e8becdeb174f977e0e8b" style="position: absolute; left: 10px;"  alt="" width="100"/>
+    <br>
+
+    <div style="margin-top: 100px;"> <input type="button" value="kik me" onclick="dichuyen()"></div>
+   
+    <script>
+        let imgobj = document.getElementById("messi");
+        // let direction = 0;
+        // function main() {
+        //     switch (direction) {
+        //         case 1:
+        //             car.style.left = parseInt(car.style.left) + 1 + 'px';
+        //             break;
+        //         case 2:
+        //             car.style.left = parseInt(car.style.left) - 1 + 'px';
+        //             break;
+        //         default:
+        //             break;
+        //     }
+        //     window.addEventListener('click', dichuyen);
+        //     requestAnimationFrame(main);
+        // }
+        function dichuyen() {
+            imgobj.style.left = parseInt(imgobj.style.left) + 5 + 'px';
+        }
+        window.onload=dichuyen;
+        // function moveleft() {
+        //     direction = 1
+        // }
+        // requestAnimationFrame(main);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
