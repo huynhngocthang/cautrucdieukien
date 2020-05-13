@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="position: absolute; left:220px;top:175px ;">do you love me</h1>
+    <input type="button" value="Yes" onclick="love()" style="position: absolute; left:285px; top:235px">
+    <input type="button" id="koyeu" value="No" onmouseout="nolove()" style="position: absolute; left:360px; top: 235px;">
+    <script>
+        function love(){
+            alert('tôi đồng ý.bạn hiển hôn')
+        }
+        function nolove() {
+            var x = Math.round(Math.random()*window.innerWidth);
+            var y = Math.round(Math.random()*window.innerHeight);
+            document.getElementById('koyeu').style.left=x +'px';
+            document.getElementById('koyeu').style.top=y +'px';
+
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body onload="doready()" >
+    <h1>chào các anh, chị code gym</h1>
+    <img src="https://photo-2-baomoi.zadn.vn/w1000_r1/2018_05_11_251_25997737/4e25b6ceaa8d43d31a9c.jpg"
+        style="position: absolute; left:0px;top:0px; width: 100px;" id="nobita">
+
+    <script>
+        let imge = document.getElementById('nobita');
+        function up() {
+            imge.style.top = parseInt(imge.style.top) - 5 + 'px';
+        }
+        function down() {
+            imge.style.top = parseInt(imge.style.top) + 5 + 'px';
+        }
+        function left() {
+            imge.style.left = parseInt(imge.style.left) - 5 + 'px';
+        }
+        function right() {
+            imge.style.left = parseInt(imge.style.left) + 5 + 'px';
+        }
+        function move(evt) {
+            // console.log(evt.keyCode)
+            switch (evt.keyCode) {
+                case 38:
+                    up();
+                    break;
+                case 40:
+                    down();
+                    break;
+                case 37:
+                    left();
+                    break;
+                case 39:
+                    right();
+                    break;
+                default:
+                    break;
+            }
+        }
+        function doready() {
+            window.addEventListener('keydown', move);
+
+        }
+
+        setInterval(right,1000);
+    </script>
+</body>
+
+</html>
